@@ -29,6 +29,8 @@ class Book(models.Model):
     fields_name = models.CharField(max_length=200)
     stars = models.IntegerField(default=0)
     release_date = models.IntegerField(default=0)
+    cuurent_date = models.DateField(datetime)
+
 
     def __str__(self):
         return self.book_text
